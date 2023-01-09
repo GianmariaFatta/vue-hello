@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="S.Gianmaria Fatta" >
     <title>Document</title>
+    <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <script defer  src="js/script.js" ></script>
 </head>
 <body>
-    <h1 id="root" ></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col p-5">
+                <div class="text-center" id="root">
+                    <h1 class="text-danger">Ciao a tutti, il mio nome è {{firstName}} {{lastName}}, ho {{age}} anni e vengo da {{city}}. Ho deciso di studiare {{study}} presso {{academy}} per formarmi come Full Stack Web developer.</h1>
+                
+                    <img class="w-25" :src="pic" :alt="firstName"    >
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
